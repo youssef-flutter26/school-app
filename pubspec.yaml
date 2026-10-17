@@ -1,0 +1,44 @@
+name: schoolride
+description: SchoolRide role-based school transport management client.
+publish_to: 'none'
+version: 1.1.0+2
+environment:
+  sdk: '>=3.3.0 <4.0.0'
+dependencies:
+  flutter:
+    sdk: flutter
+  http: ^1.2.2
+  shared_preferences: ^2.3.2
+  intl: ^0.19.0
+  flutter_bloc: ^9.1.1
+  google_maps_flutter: ^2.19.0
+  geolocator: ^14.1.1
+  web_socket_channel: ^3.0.3
+  dio: ^5.11.1
+  flutter_map: ^8.3.2
+  latlong2: ^0.10.1
+  flutter_local_notifications: ^22.3.2
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+  flutter_launcher_icons: ^0.14.1
+  flutter_native_splash: ^2.4.2
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/branding/schoolride_logo.jpg
+    - assets/branding/schoolride_app_icon.png
+
+flutter_launcher_icons:
+  android: true
+  ios: true
+  image_path: assets/branding/schoolride_app_icon.png
+  min_sdk_android: 21
+
+flutter_native_splash:
+  color: "#FFFFFF"
+  image: assets/branding/schoolride_logo.jpg
+  android_12:
+    color: "#FFFFFF"
+    image: assets/branding/schoolride_logo.jpg
